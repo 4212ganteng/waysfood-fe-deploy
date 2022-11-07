@@ -25,7 +25,7 @@ import { API } from "../config/api";
 import { CartContext } from "../contexts/CartContext";
 
 import convertRupiah from "rupiah-format";
-import Map from "../components/map/Map";
+// import Map from "../components/map/Map";
 import { UserContext } from "../contexts/UserContext";
 import L from "leaflet";
 import { useNavigate } from "react-router-dom";
@@ -295,11 +295,11 @@ const CartOrder = () => {
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
-        <Map
+        {/* <Map
           routing={true}
           userProfile={userProfile}
           partnerLocation={cartData && cartData[0]?.product?.user?.location}
-        />
+        /> */}
       </Modal>
     </Container>
   );
